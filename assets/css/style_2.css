@@ -518,6 +518,116 @@ h6 {
     margin: 0 0 30px;
 }
 
+/* quote-section */
+.quote-section {
+    background-color: #F6F6F6;
+    padding: 72px 0;
+}
+.quote-section .quote-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-auto-rows: auto;
+    gap: 1rem;
+}
+.quote-section .quote-item {
+    background-color: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 45px;
+}
+.quote-section .quote-item-head {
+    border-bottom: 1px solid #DBDBDB;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    margin: 0 0 25px;
+    width: 100%;
+}
+.quote-section .img-wrap {
+    max-width: 200px;
+    margin: 0 auto;
+}
+.quote-section .author {
+    margin: 0 0 35px;
+}
+.quote-section .author-info {
+    font-size: 17px;
+}
+.quote-section .author-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 20px 0 9px;
+}
+.quote-section .quote-ico {
+    max-height: 30px;
+    max-width: 36px;
+    margin: 0 auto 3px;
+}
+.quote-section .quote-text {
+    font-size: 17px;
+    line-height: 1.45;
+}
+
+/* footer */
+.footer {
+    background-color: #000;
+    padding: 35px 0 0;
+    margin: 0 0 215px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer .logo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+.footer .mail-ico {
+    max-width: 76px;
+    max-height: 60px;
+    margin: 0 auto 25px;
+}
+.footer .mail-name {
+    color: #FFC230;
+    font-weight: 300;
+    font-size: 24px;
+}
+.footer .mail-description {
+    color: #7A7A7A;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0 auto 8px;
+}
+.footer .logo-img {
+    display: block;
+    margin: 40px auto 0;
+}
+.footer .logo-img img {
+    margin: 0 auto;
+    max-width: 100%;
+}
+.footer .subsidiary {
+    background: #181818;
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: center;
+    width: 100%;
+    padding: 50px 0;
+    margin: 103px 0 0;
+}
+.footer .subsidiary p + p {
+    margin: 20px 0 0;
+}
+
 @media (min-width: 768px) {
     .section-title {
         font-size: 26px;
@@ -619,6 +729,37 @@ h6 {
     .free-bonus .example-wrap p {
         font-size: 40px;
     }
+    /* quote-section */
+    .quote-section .quote-wrap {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .quote-section .author-info {
+        font-size: 18px;
+    }
+    .quote-section .author-title {
+        font-size: 22px;
+    }
+    .quote-section .icon-wrap {
+        margin: 0 0 17px;
+    }
+    .quote-section .quote-ico {
+        max-height: 30px;
+        max-width: 50px;
+    }
+    .quote-section .quote-text {
+        font-size: 18px;
+        padding: 0 50px;
+    }
+
+    /* footer */
+    .footer {
+        margin: 0 0 175px;
+    }
+    .footer .subsidiary {
+        font-size: 15px;
+        padding: 50px 0;
+        margin: 45px 0 0;
+    }
 }
 @media (min-width: 992px) {
     /* free-bonus */
@@ -630,6 +771,10 @@ h6 {
         width: auto;
         height: auto;
     }
+    /* footer */
+    .footer .mail-name {
+        font-size: 40px;
+    }
 }
 
 
@@ -640,31 +785,7 @@ h6 {
 
 
 
-/* footer */
-.footer {
-    background-color: #000;
-    padding: 35px 0 0;
-    margin: 0 0 215px;
-}
-.footer .logo {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-}
-.footer .mail-ico {
-    max-width: 76px;
-    max-height: 60px;
-    margin: 0 auto 25px;
-}
-.footer .logo-img {
-    display: block;
-    margin: 40px auto 0;
-}
-.footer .logo-img img {
-    margin: 0 auto;
-    max-width: 100%;
-}
+
 .floating-wrap {
     position: fixed;
     right: 0;
