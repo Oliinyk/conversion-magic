@@ -383,7 +383,7 @@ h6 {
 /* text-section */
 .text-section {
     background: linear-gradient(0deg, rgba(245, 245, 245, 0) 0%, rgba(245, 245, 245, 1) 100%);
-    padding: 70px 0 60px;
+    padding: 70px 0 100px;
     position: relative;
 }
 .text-section .title {
@@ -432,7 +432,7 @@ h6 {
 .free-bonus-item {
     border-radius: 16px;
     position: relative;
-    padding: 55px 20px 25px;
+    padding: 55px 0 63px;
 }
 .free-bonus.bonus-red .free-bonus-item {
     background: #FFF4F3;
@@ -442,6 +442,14 @@ h6 {
     position: absolute;
     top: -55px;
     right: -12px;
+}
+.free-bonus .bonus-item-wrap {
+    max-width: 780px;
+    margin: 0 auto;
+}
+.free-bonus .divider {
+    border-top: 3px solid rgba(213, 41, 23, 0.25);
+    width: 100%;
 }
 .free-bonus .bonus-price img {
     width: 106px;
@@ -456,11 +464,59 @@ h6 {
     font-size: 19px;
     font-weight: 700;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.4;
     padding: 0 25px;
-    margin: 0 auto 17px;
+    margin: 0 auto 25px;
 }
-
+.free-bonus .text-holder {
+    text-align: center;
+    line-height: 1.4;
+    margin: 22px 0 73px;
+}
+.free-bonus-description {
+    font-size: 15px;
+    margin: 0 0 53px;
+}
+.free-bonus .text-item-1 {
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+.free-bonus .text-item-2 {
+    font-size: 17px;
+    margin: 0 0 40px;
+    text-decoration-line: underline;
+}
+.free-bonus .text-item-3 {
+    font-size: 20px;
+    max-width: 530px;
+    margin: 0 auto;
+}
+.free-bonus .text-col-holder {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 45px;
+}
+.free-bonus .text-col-holder .text-col-item {
+    display: flex;
+    align-items: flex-start;
+    font-size: 17px;
+    line-height: 1.4;
+    margin: 0 0 14px;
+    width: 100%;
+}
+.free-bonus .text-col-holder .text-col-item img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+.free-bonus .example-wrap {
+    text-align: center;
+    padding: 32px 0 0;
+}
+.free-bonus .example-wrap p {
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0 0 30px;
+}
 
 @media (min-width: 768px) {
     .section-title {
@@ -538,6 +594,30 @@ h6 {
     .free-bonus-title {
         font-size: 40px;
         padding: 0;
+    }
+    .free-bonus-description {
+        font-size: 18px;
+    }
+    .free-bonus .text-item-1 {
+        font-size: 24px;
+    }
+    .free-bonus .text-item-2 {
+        font-size: 20px;
+    }
+    .free-bonus .text-col-holder .text-col-item {
+        display: block;
+        font-size: 18px;
+        text-align: center;
+        padding: 0 10px;
+        margin: 0;
+        width: 33.33%;
+    }
+    .free-bonus .text-col-holder .text-col-item img {
+        margin: 0 auto 12px;
+        width: 40px;
+    }
+    .free-bonus .example-wrap p {
+        font-size: 40px;
     }
 }
 @media (min-width: 992px) {
