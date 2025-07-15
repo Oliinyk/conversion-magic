@@ -204,6 +204,7 @@ h6 {
 .text-highlighting {
     background-color: #FCDB7B;
     border-radius: 6px;
+    display: inline-block;
     padding: 3px 5px;
 }
 .gray-bg {
@@ -499,7 +500,7 @@ h6 {
     position: relative;
     padding: 40px 20px 33px;
 }
-.free-bonus.bonus-red .free-bonus-item {
+.free-bonus .free-bonus-item.bonus-red {
     background: #FFF4F3;
     border: 3px solid rgba(213, 41, 23, 0.25);
 }

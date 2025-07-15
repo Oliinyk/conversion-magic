@@ -215,9 +215,9 @@
     </div>
 </section>
 
-<section class="free-bonus bonus-red">
+<section class="free-bonus">
     <div class="container">
-        <article class="free-bonus-item">
+        <article class="free-bonus-item bonus-red">
             <div class="bonus-item-wrap">
                 <div class="bonus-price">
                     <img src="assets/images/price-49.svg" alt="price">
@@ -263,8 +263,8 @@
                     <p>Example</p>
                     <div class="img-wrap">
                         <picture>
-                            <source type="image/webp" srcset="assets/images/webp/example-row.webp, assets/images/2x/webp/example-row@2x.webp">
-                            <source type="image/png" srcset="assets/images/example-row.png, assets/images/2x/example-row@2x.png 2x">
+                            <source type="image/webp" srcset="assets/images/webp/example-row.webp 1x, assets/images/2x/webp/example-row@2x.webp 2x">
+                            <source type="image/png" srcset="assets/images/example-row.png 1x, assets/images/2x/example-row@2x.png 2x">
                             <img src="assets/images/example-row.png" alt="example-row" class="img-fluid">
                         </picture>
                     </div>
@@ -488,7 +488,7 @@ function updateTimer() {
     const currentTime = new Date().getTime();
     const startTimeCm = localStorage.getItem('startTimeCm');
     const elapsedTime = (currentTime - startTimeCm) / 1000;
-    const remainingTime = Math.max(0, 0.333 * 3600 - elapsedTime); // 60min
+    const remainingTime = Math.max(0, 0.333 * 3600 - elapsedTime); // 20min
     const minutes = Math.floor((remainingTime % 3600) / 60);
     const seconds = Math.floor(remainingTime % 60);
     
