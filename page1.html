@@ -488,7 +488,7 @@ function updateTimer() {
     const currentTime = new Date().getTime();
     const startTimeCm = localStorage.getItem('startTimeCm');
     const elapsedTime = (currentTime - startTimeCm) / 1000;
-    const remainingTime = Math.max(0, 1 * 3600 - elapsedTime); // 60min
+    const remainingTime = Math.max(0, 0.333 * 3600 - elapsedTime); // 60min
     const minutes = Math.floor((remainingTime % 3600) / 60);
     const seconds = Math.floor(remainingTime % 60);
     
