@@ -479,47 +479,7 @@
 </div>
 
 <script>
-// function wrapDigits(number) {
-//     return number.split('').map(digit => `<span>${digit}</span>`).join('');
-// }
-
-// function updateTimer() {
-//     const currentTime = new Date().getTime();
-//     const startTimeClinic = localStorage.getItem('startTimeClinic');
-//     const elapsedTime = (currentTime - startTimeClinic) / 1000;
-//     const remainingTime = Math.max(0, 1 * 3600 - elapsedTime); // 60min
-//     const minutes = Math.floor((remainingTime % 3600) / 60);
-//     const seconds = Math.floor(remainingTime % 60);
-    
-//     const formattedMinutes = ('0' + minutes).slice(-2);
-//     const formattedSeconds = ('0' + seconds).slice(-2);
-
-//     document.querySelectorAll(".timer .counter").forEach(timerElement => {
-//         timerElement.innerHTML = `
-//             <div class='count-item'>
-//                 <div class='number'>${wrapDigits(formattedMinutes)}</div>
-//                 <p class='hint'>MINUTES</p>
-//             </div>
-//             <div class='count-item'>
-//                 <div class='number'>${wrapDigits(formattedSeconds)}</div>
-//                 <p class='hint'>SECONDS</p>
-//             </div>
-//         `;
-//     });
-
-//     setTimeout(updateTimer, 1000);
-// }
-
-// function initializeTimer() {
-//     const startTimeClinic = localStorage.getItem('startTimeClinic');
-//     if (!startTimeClinic) {
-//         localStorage.setItem('startTimeClinic', new Date().getTime());
-//     }
-//     updateTimer();
-// }
-
-// initializeTimer();
-
+// countdown
 function wrapDigits(number) {
     return number.split('').map(digit => `<span>${digit}</span>`).join('');
 }
@@ -559,8 +519,6 @@ function initializeTimer() {
 
 initializeTimer();
 
-
-
 // Tab
 document.querySelectorAll(".logo-section").forEach(function(section) {
   var tabLinks = section.querySelectorAll(".tablinks");
@@ -588,28 +546,6 @@ function openTabs(event, tabLinks, tabContent, section) {
   section.querySelector(".tabcontent[data-tab='" + tab + "']").classList.add("active");
   btn.classList.add("active");
 }
-
-// 60 second delay to show the "Try It for Free" section
-const floatingSection = document.querySelector('.floating-wrap');
-const videoTestimonialsSection = document.querySelector('.section-delay');
-
-function floatingVisibility() {
-    setTimeout(() => {
-        floatingSection.classList.remove('floating-delay');
-    }, 60000);
-}
-
-function removeHiddenOnScroll() {
-    const sectionPosition = videoTestimonialsSection.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
-
-    if (sectionPosition.top < windowHeight && sectionPosition.bottom > 0) {
-        floatingSection.classList.remove('floating-delay');
-    }
-}
-floatingVisibility();
-window.addEventListener('scroll', removeHiddenOnScroll);
 </script>
-
 </body>
 </html>

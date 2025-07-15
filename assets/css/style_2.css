@@ -69,7 +69,7 @@ h6 {
     font-family: 'Barlow', sans-serif;
     display: block;
     border-radius: 12px;
-    padding: 23px 17px;
+    padding: 19px 17px;
     font-size: 18px;
     line-height: 1;
     font-weight: 600;
@@ -251,7 +251,7 @@ h6 {
 /* hero-section */
 .hero {
     background: linear-gradient(0deg, rgba(245, 245, 245, 0) 0%, rgba(245, 245, 245, 1) 100%);
-    padding: 17px 0 60px;
+    padding: 17px 0 20px;
     position: relative;
     text-align: center;
     color: #181818;
@@ -309,10 +309,6 @@ h6 {
 .sticky-countdown .timer {
     margin-left: 20px;
 }
-.sticky-countdown .counter {
-    display: flex;
-    justify-content: center;
-}
 .sticky-countdown .count-item + .count-item {
     margin-left: 12px;
 }
@@ -326,8 +322,7 @@ h6 {
     border: 1px solid #000;
     border-radius: 3px;
     align-items: center;
-    padding: 3px 5px;
-    max-width: 69px;
+    padding: 4px 10px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -340,7 +335,7 @@ h6 {
 }
 .sticky-countdown .count-item .number span {
     color: rgba(24, 24, 24, 1);
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 700;
     height: auto;
     width: auto;
@@ -348,7 +343,7 @@ h6 {
 .sticky-countdown .timer .count-item + .count-item::before {
     content: ":";
     color: #000;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 700;
     display: inline-block;
     position: absolute;
@@ -427,7 +422,7 @@ h6 {
     background-color: #fff;
     border: 1px solid #DBDBDB;
     border-radius: 6px;
-    min-height: 60px;
+    min-height: 52px;
     padding: 0;
 }
 .logo-section .logo-item img {
@@ -453,19 +448,19 @@ h6 {
 /* text-section */
 .text-section {
     background: linear-gradient(0deg, rgba(245, 245, 245, 0) 0%, rgba(245, 245, 245, 1) 100%);
-    padding: 70px 0 100px;
+    padding: 40px 0 85px;
     position: relative;
 }
 .text-section .title {
     font-size: 22px;
     line-height: 1.4;
     text-align: center;
-    margin: 0 0 20px;
+    margin: 0 0 10px;
 }
 .text-section .text-row {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0 40px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 28px 0;
     margin: 12px 0 0;
 }
 .text-section .col-title {
@@ -486,7 +481,7 @@ h6 {
     font-size: 17px;
     line-height: 1.4;
     padding-left: 42px;
-    margin: 0 0 25px;
+    margin: 0 0 15px;
 }
 .list-check li:after {
     content: '';
@@ -502,7 +497,7 @@ h6 {
 .free-bonus-item {
     border-radius: 16px;
     position: relative;
-    padding: 55px 0 63px;
+    padding: 40px 20px 33px;
 }
 .free-bonus.bonus-red .free-bonus-item {
     background: #FFF4F3;
@@ -519,7 +514,8 @@ h6 {
 }
 .free-bonus .divider {
     border-top: 3px solid rgba(213, 41, 23, 0.25);
-    width: 100%;
+    width: calc(100% + 40px);
+    margin-left: -20px;
 }
 .free-bonus .bonus-price img {
     width: 106px;
@@ -528,24 +524,23 @@ h6 {
 .free-bonus .title-img {
     display: flex;
     justify-content: center;
-    margin: 0 70px 25px;
+    margin: 0 50px 25px;
 }
 .free-bonus-title {
     font-size: 19px;
     font-weight: 700;
     text-align: center;
     line-height: 1.4;
-    padding: 0 25px;
     margin: 0 auto 25px;
 }
 .free-bonus .text-holder {
     text-align: center;
     line-height: 1.4;
-    margin: 22px 0 73px;
+    margin: 22px 0 48px;
 }
 .free-bonus-description {
     font-size: 15px;
-    margin: 0 0 53px;
+    margin: 0 0 35px;
 }
 .free-bonus .text-item-1 {
     font-size: 20px;
@@ -553,47 +548,46 @@ h6 {
 }
 .free-bonus .text-item-2 {
     font-size: 17px;
-    margin: 0 0 40px;
+    margin: 0 0 30px;
     text-decoration-line: underline;
 }
 .free-bonus .text-item-3 {
-    font-size: 20px;
+    font-size: 17px;
     max-width: 530px;
     margin: 0 auto;
 }
 .free-bonus .text-col-holder {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 0 45px;
+    margin: 0 0 5px;
 }
 .free-bonus .text-col-holder .text-col-item {
-    display: flex;
-    align-items: flex-start;
     font-size: 17px;
     line-height: 1.4;
-    margin: 0 0 14px;
+    margin: 0 0 23px;
     width: 100%;
 }
 .free-bonus .text-col-holder .text-col-item img {
+    margin: 0 auto 12px;
     max-width: 100%;
-    margin: 0 auto;
+    width: 40px;
 }
 .free-bonus .example-wrap {
     text-align: center;
-    padding: 32px 0 0;
+    padding: 20px 0 0;
 }
 .free-bonus .example-wrap p {
     font-size: 19px;
     font-weight: 700;
-    margin: 0 0 30px;
+    margin: 0 0 15px;
 }
 
 /* guarantee-section */
 .guarantee-section {
-    padding: 72px 0;
+    padding: 45px 0;
 }
 .guarantee-section.pb-lg {
-    padding-bottom: 170px;
+    padding-bottom: 82px;
 }
 .guarantee-wrap {
     max-width: 800px;
@@ -626,7 +620,7 @@ h6 {
 /* quote-section */
 .quote-section {
     background-color: #F6F6F6;
-    padding: 75px 0 52px;
+    padding: 45px 0 0;
 }
 .quote-section .section-title {
     font-size: 22px;
@@ -660,17 +654,17 @@ h6 {
     width: 100%;
 }
 .quote-section .virgin-logo {
-    width: 162px;
+    width: 125px;
 }
 .quote-section .microsoft-clarity-logo,
 .quote-section .credit-registry-logo {
-    max-width: 202px;
+    max-width: 162px;
 }
 .quote-section .rotoballer-logo {
-    width: 186px;
+    width: 135px;
 }
 .quote-section .img-wrap {
-    max-width: 200px;
+    max-width: 145px;
     margin: 0 auto;
 }
 .quote-section .author {
@@ -692,6 +686,7 @@ h6 {
 .quote-section .quote-text {
     font-size: 17px;
     line-height: 1.45;
+    padding: 0 20px;
 }
 .quote-section .section-note {
     text-align: center;
@@ -744,16 +739,17 @@ h6 {
     line-height: 1.6;
     text-align: center;
     width: 100%;
-    padding: 50px 0;
-    margin: 103px 0 0;
+    padding: 30px 0;
+    margin: 20px 0 0;
 }
 .footer .subsidiary p + p {
-    margin: 20px 0 0;
+    margin: 15px 0 0;
 }
 
 @media (min-width: 768px) {
     .btn {
         font-size: 22px;
+        padding: 23px 17px;
     }
     .header {
         padding: 24px 0;
@@ -844,8 +840,16 @@ h6 {
         font-size: 16px;
     }
     /* text-section */
+    .text-section {
+        padding: 70px 0 100px;
+    }
     .text-section .title {
         font-size: 40px;
+        margin: 0 0 20px;
+    }
+    .text-section .text-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0 40px;
     }
     .text-section .col-title {
         font-size: 32px;
@@ -855,6 +859,7 @@ h6 {
     }
     .list-check li {
         font-size: 18px;
+        margin: 0 0 25px;
     }
     .list-check li:after {
         width: 24px;
@@ -863,6 +868,9 @@ h6 {
         background-repeat: no-repeat;
     }
     /* free-bonus */
+    .free-bonus-item {
+        padding: 55px 20px 63px;
+    }
     .free-bonus .title-img {
         margin: 0 0 25px;
     }
@@ -872,29 +880,46 @@ h6 {
     }
     .free-bonus-description {
         font-size: 18px;
+        margin: 0 0 53px;
     }
     .free-bonus .text-item-1 {
         font-size: 24px;
     }
     .free-bonus .text-item-2 {
         font-size: 20px;
+        margin: 0 0 40px;
+    }
+    .free-bonus .text-item-3 {
+        font-size: 20px;
+    }
+    .free-bonus .text-col-holder {
+        margin: 0 0 45px;
+    }
+    .free-bonus .text-holder {
+        margin: 22px 0 73px;
     }
     .free-bonus .text-col-holder .text-col-item {
         display: block;
         font-size: 18px;
         text-align: center;
         padding: 0 10px;
-        margin: 0;
+        margin: 0 0 14px;
         width: 33.33%;
     }
-    .free-bonus .text-col-holder .text-col-item img {
-        margin: 0 auto 12px;
-        width: 40px;
+    .free-bonus .example-wrap {
+        padding: 32px 0 0;
     }
     .free-bonus .example-wrap p {
         font-size: 40px;
+        margin: 0 0 30px;
     }
     /* .guarantee-section */
+    .guarantee-section {
+        padding: 72px 0;
+    }
+    .guarantee-section.pb-lg {
+        padding-bottom: 170px;
+    }
     .guarantee-section .section-title {
         font-size: 44px;
     }
@@ -905,6 +930,9 @@ h6 {
         font-size: 18px;
     }
     /* quote-section */
+    .quote-section {
+        padding: 75px 0 52px;
+    }
     .quote-section .section-title {
         font-size: 40px;
         margin-bottom: 55px;
@@ -914,6 +942,19 @@ h6 {
     }
     .quote-section .quote-item-head {
         min-height: 82px;
+    }
+    .quote-section .virgin-logo {
+        width: 162px;
+    }
+    .quote-section .microsoft-clarity-logo,
+    .quote-section .credit-registry-logo {
+        max-width: 202px;
+    }
+    .quote-section .img-wrap {
+        max-width: 200px;
+    }
+    .quote-section .rotoballer-logo {
+        width: 186px;
     }
     .quote-section .author-info {
         font-size: 18px;
@@ -941,8 +982,11 @@ h6 {
         padding: 50px 0;
         margin: 45px 0 0;
     }
+    .footer .subsidiary p + p {
+        margin: 20px 0 0;
+    }
 }
-@media (min-width: 992px) {
+@media (min-width: 1030px) {
     /* free-bonus */
     .free-bonus .bonus-price {
         top: -34px;
