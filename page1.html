@@ -38,11 +38,9 @@
         <h1 class="title">
             Get the Videos and Join Hundreds of Visual Learners. Act Now for <span class="text-highlighting">50% OFF</span> & Instant Access
         </h1>
-
-        <div class="video-wrap section_eight_video" style="position: relative; padding-bottom: 34.25%; height: 0;">
+        <div class="video-wrap section_eight_video">
             <iframe src="https://www.loom.com/embed/6cafcfa90c72479a9405353c60ca5182?sid=f206e6e5-2b51-45e5-888b-7495dd703337&amp;hideEmbedTopBar=true" frameborder="0" height="330" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
         </div>
-
         <div>
             <p class="text-wrap-price"><s>$99</s> <b>ONLY $49 <span class="text-red">(50% OFF)</span></b></p>
             <a href="#" class="btn btn-check">
@@ -53,14 +51,20 @@
             </a>
             <p class="section-note">100% money back guarantee & lifetime access</p>
         </div>
-        
-        <!-- Count -->
-        <!-- <div class="timer">
-            <div id="timer" class="counter"></div>
-        </div> -->
-
     </div>
 </section>
+
+<div class="sticky-countdown">
+    <div class="container">
+        <div class="countdown-wrap">
+            <p>50% OFF Offer Ends In:</p>
+            <!-- Count -->
+            <div class="timer">
+                <div id="timer" class="counter"></div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- logo-section -->
 <section class="logo-section">
@@ -441,35 +445,6 @@
     </div>
 </footer>
 
-
-
-
-
-
-
-
-
-
-
-<!-- <div class="floating-wrap course-floating">
-    <div class="f-row">
-        <div class="f-row-wrap">
-            <div class="f-col">
-                50% OFF Offer Ends In:
-            </div>
-            <div class="f-timer">
-                <div class="timer">
-                    <div id="timer" class="counter"></div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div> -->
-
-
-
-
 <!-- svg sprite -->
 <div class="main_svg" hidden>
     <svg>
@@ -504,14 +479,55 @@
 </div>
 
 <script>
+// function wrapDigits(number) {
+//     return number.split('').map(digit => `<span>${digit}</span>`).join('');
+// }
+
+// function updateTimer() {
+//     const currentTime = new Date().getTime();
+//     const startTimeClinic = localStorage.getItem('startTimeClinic');
+//     const elapsedTime = (currentTime - startTimeClinic) / 1000;
+//     const remainingTime = Math.max(0, 1 * 3600 - elapsedTime); // 60min
+//     const minutes = Math.floor((remainingTime % 3600) / 60);
+//     const seconds = Math.floor(remainingTime % 60);
+    
+//     const formattedMinutes = ('0' + minutes).slice(-2);
+//     const formattedSeconds = ('0' + seconds).slice(-2);
+
+//     document.querySelectorAll(".timer .counter").forEach(timerElement => {
+//         timerElement.innerHTML = `
+//             <div class='count-item'>
+//                 <div class='number'>${wrapDigits(formattedMinutes)}</div>
+//                 <p class='hint'>MINUTES</p>
+//             </div>
+//             <div class='count-item'>
+//                 <div class='number'>${wrapDigits(formattedSeconds)}</div>
+//                 <p class='hint'>SECONDS</p>
+//             </div>
+//         `;
+//     });
+
+//     setTimeout(updateTimer, 1000);
+// }
+
+// function initializeTimer() {
+//     const startTimeClinic = localStorage.getItem('startTimeClinic');
+//     if (!startTimeClinic) {
+//         localStorage.setItem('startTimeClinic', new Date().getTime());
+//     }
+//     updateTimer();
+// }
+
+// initializeTimer();
+
 function wrapDigits(number) {
     return number.split('').map(digit => `<span>${digit}</span>`).join('');
 }
 
 function updateTimer() {
     const currentTime = new Date().getTime();
-    const startTimeClinic = localStorage.getItem('startTimeClinic');
-    const elapsedTime = (currentTime - startTimeClinic) / 1000;
+    const startTimeCm = localStorage.getItem('startTimeCm');
+    const elapsedTime = (currentTime - startTimeCm) / 1000;
     const remainingTime = Math.max(0, 1 * 3600 - elapsedTime); // 60min
     const minutes = Math.floor((remainingTime % 3600) / 60);
     const seconds = Math.floor(remainingTime % 60);
@@ -523,11 +539,9 @@ function updateTimer() {
         timerElement.innerHTML = `
             <div class='count-item'>
                 <div class='number'>${wrapDigits(formattedMinutes)}</div>
-                <p class='hint'>MINUTES</p>
             </div>
             <div class='count-item'>
                 <div class='number'>${wrapDigits(formattedSeconds)}</div>
-                <p class='hint'>SECONDS</p>
             </div>
         `;
     });
@@ -536,14 +550,16 @@ function updateTimer() {
 }
 
 function initializeTimer() {
-    const startTimeClinic = localStorage.getItem('startTimeClinic');
-    if (!startTimeClinic) {
-        localStorage.setItem('startTimeClinic', new Date().getTime());
+    const startTimeCm = localStorage.getItem('startTimeCm');
+    if (!startTimeCm) {
+        localStorage.setItem('startTimeCm', new Date().getTime());
     }
     updateTimer();
 }
 
 initializeTimer();
+
+
 
 // Tab
 document.querySelectorAll(".logo-section").forEach(function(section) {
