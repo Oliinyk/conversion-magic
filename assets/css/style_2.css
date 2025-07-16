@@ -202,9 +202,9 @@ h6 {
     color: var(--red-color);
 }
 .text-highlighting {
+    display: inline-block;
     background-color: #FCDB7B;
     border-radius: 6px;
-    display: inline-block;
     padding: 3px 5px;
 }
 .gray-bg {
@@ -641,7 +641,6 @@ h6 {
     text-align: center;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     padding: 0 0 45px;
 }
@@ -692,6 +691,382 @@ h6 {
 .quote-section .section-note {
     text-align: center;
     font-size: 11px;
+}
+
+/* main style */
+.text-danger {
+    color: #DE3C3C;
+    font-size: 16px;
+    font-weight: 700;
+}
+.hero .text-danger {
+    margin: 0 auto 10px;
+}
+.hero .hero-title {
+    margin: 14px 0 18px;
+}
+.hero-description .text-highlighting {
+    font-size: 11px;
+    margin: 18px auto 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+}
+.hero-description .text-wrap-price {
+    margin: 17px 0 18px;
+}
+
+/* danger section */
+.gray-section {
+    background-color: #F6F6F6;
+}
+.section-danger-mines {
+    padding: 42px 0 0;
+}
+.section-danger-mines .section-title {
+    font-size: 22px;
+    max-width: 780px;
+    margin: 0 auto 20px;
+    line-height: 1.4;
+    letter-spacing: 0;
+}
+.section-danger-mines .col {
+    display: grid;
+}
+.section-danger-mines .col-2 {
+    gap: 20px;
+}
+.section-danger-mines img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.section-danger-mines .text-wrap {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    line-height: 1.5;
+}
+.section-danger-mines .text-wrap > * {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.section-danger-mines .text-wrap > *:not(:last-child) {
+    border-bottom: 1px solid #FFC230;
+}
+.section-danger-mines .text-wrap p + p {
+    margin-top: 20px;
+}
+.section-danger-mines .list-disc {
+    list-style: disc;
+    line-height: 1.5;
+    padding: 0 0 20px 24px;
+}
+.section-danger-mines .list-disc li + li {
+    margin: 15px 0 0;
+}
+
+/* step-section */
+.step-section {
+    padding: 40px 0 40px;
+}
+.step-section .section-title {
+    font-size: 22px;
+    margin: 0 0 32px;
+}
+.step-section .item-num {
+    background-color: #FFC230;
+    border-radius: 3px;
+    font-size: 24px;
+    font-weight: 700;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+.step-section .step-item:first-child .item-title {
+    margin: 0 0 5px;
+}
+.step-section .item-title {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0 0 20px;
+}
+.step-section .item-text {
+    font-size: 17px;
+    line-height: 1.5;
+}
+.step-section .item-text li {
+    margin-bottom: 25px;
+}
+.step-section .list-arrow {
+    font-size: 17px;
+    text-align: left;
+}
+.step-section .list-arrow li {
+    position: relative;
+    padding-left: 40px;
+}
+.step-section .list-arrow li + li {
+    margin: 20px 0 0;
+}
+.step-section .list-arrow li::after {
+    content: '';
+    background-image: url('../images/arrow-ico.svg');
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 2px;
+    top: 3px;
+    width: 24px;
+    height: 24px;
+}
+.step-section .step-item-wrap {
+    display: grid;
+    text-align: center;
+    gap: 20px;
+}
+.step-section .step-item + .step-item {
+    border-top: 1px solid #DBDBDB;
+    padding-top: 42px;
+    margin-top: 42px;
+}
+.step-section .step-item img {
+    max-width: 100%;
+    height: auto;
+}
+.step-section .step-item:nth-child(odd) .item-col:first-child {
+    order: 2;
+}
+.step-section .step-item:nth-child(odd) .item-col:last-child {
+    order: 1;
+}
+.hide-desk {
+    display: block;
+}
+.hide-mob {
+    display: none;
+}
+.step-section .step-item:nth-child(odd) img {
+    margin: 0 auto;
+}
+.step-section .item-note {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0 0;
+}
+.step-section .img-note {
+    font-size: 12px;
+    line-height: 1.6;
+    max-width: 390px;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+/* section-promotion */
+.section-promotion {
+    padding: 40px 0 77px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.5;
+}
+.section-promotion .section-title {
+    font-size: 22px;
+    max-width: 660px;
+    margin: 0 auto ;
+    letter-spacing: 0;
+    line-height: 1.4;
+}
+.section-promotion .section-img {
+    max-width: 541px;
+    margin: -18px auto 20px;
+    max-width: 100%;
+    height: auto;
+}
+.section-promotion .promotion-text {
+    max-width: 620px;
+    margin: 0 auto;
+}
+.section-promotion .promotion-text p {
+    margin-bottom: 25px;
+}
+.money-back-wrap {
+    text-align: center;
+}
+.text-wrap-price {
+    margin: 40px 0 25px;
+}
+.money-back-holder {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.money-back-holder p {
+    margin-bottom: 20px;
+    width: 100%;
+}
+.money-back-holder .decline-text {
+    color: #181818;
+    margin-bottom: 40px;
+    display: block;
+    width: 100%;
+}
+
+/* get-plan-section */
+.get-plan-section {
+    padding: 40px 0 85px;
+}
+.get-plan-section .section-title {
+    font-size: 22px;
+    line-height: 1.4;
+    letter-spacing: 0;
+    margin: 0 auto 22px;
+}
+.get-plan-section .plan-wrap {
+    display: grid;
+    gap: 10px;
+}
+.get-plan-section .plan-item {
+    background-color: #F6F6F6;
+    border-radius: 6px;
+    text-align: center;
+    padding: 40px 35px 38px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.get-plan-section .checkmark-ico {
+    width: 100%;
+    max-width: 50px;
+    max-height: 50px;
+    margin: 0 auto 14px;
+}
+
+/* free-bonus */
+.free-bonus {
+    padding: 0 0 95px;
+}
+.free-bonus-subtitle {
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+    font-weight: 700;
+    max-width: 562px;
+    margin: 0 auto;
+}
+.free-bonus .free-bonus-list.two-col {
+    display: grid;
+    max-width: 680px;
+    margin: 10px auto 20px;
+}
+.free-bonus .free-bonus-list li {
+    position: relative;
+    font-size: 15px;
+    line-height: 1.4;
+    padding-left: 42px;
+    margin: 0 0 12px;
+}
+.free-bonus .free-bonus-list li:after {
+    content: '';
+    background-image: url('../images/ic-checkmark-1.svg');
+    background-size: 26px 26px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 26px;
+    height: 26px;
+}
+.text-holder.white-bg {
+    font-size: 17px;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 30px 15px;
+    margin: 0 auto;
+}
+.text-holder.white-bg p + p {
+    margin-top: 28px;
+}
+.free-bonus-item + .free-bonus-item {
+    margin: 20px auto 0;
+}
+.free-bonus .free-bonus-item.bonus-yellow {
+    background: #FFFBF0;
+    border: 3px solid rgba(255, 194, 48, 0.25);
+    padding: 28px 20px 40px;
+}
+.free-bonus .bonus-yellow .free-bonus-title {
+    max-width: 580px;
+    margin: 0 auto 20px;
+}
+.free-bonus-item table {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    border-spacing: 0;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 0 0 0.5px #DBDBDB;
+    max-width: 620px;
+    margin: 0 auto;
+}
+.free-bonus-item thead {
+    background-color: #080808;
+    color: #fff;
+}
+.free-bonus-item thead th {
+    font-weight: 400;
+}
+.free-bonus-item th,
+.free-bonus-item td {
+    vertical-align: top;
+    border: 0.5px solid #DBDBDB;
+    padding: 11px 20px;
+    width: 50%;
+}
+.free-bonus-item table thead th:first-child {
+    border-top-left-radius: 6px;
+}
+.free-bonus-item table thead th:last-child {
+    border-top-right-radius: 6px;
+}
+.free-bonus-item table tfoot td:first-child {
+    border-bottom-left-radius: 6px;
+}
+.free-bonus-item table tfoot td:last-child {
+    border-bottom-right-radius: 6px;
+}
+.free-bonus-item tbody > tr:nth-of-type(even) {
+  background-color: #FFF6DF;
+}
+.free-bonus-item tfoot td {
+  font-weight: bold;
+}
+
+/* quote-section */
+.author-subtitle {
+    line-height: 1.5;
+    max-width: 350px;
+    margin: 0 auto 5px;
+}
+.author-description {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+    max-width: 350px;
+    margin: 0 auto;
+}
+.quote-text p + p {
+    margin-top: 18px;
+}
+.quote-section .money-back-wrap {
+    padding: 0 0 69px;
 }
 
 /* footer */
@@ -746,7 +1121,6 @@ h6 {
 .footer .subsidiary p + p {
     margin: 15px 0 0;
 }
-
 @media (min-width: 768px) {
     .btn {
         font-size: 22px;
@@ -942,7 +1316,8 @@ h6 {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     .quote-section .quote-item-head {
-        min-height: 82px;
+        height: 100%;
+        max-height: 82px;
     }
     .quote-section .virgin-logo {
         width: 162px;
@@ -976,6 +1351,141 @@ h6 {
     }
     .quote-section .section-note {
         font-size: 13px;
+    }
+    /* main style */
+    .text-danger {
+        font-size: 18px;
+    }
+    .hero-description .text-highlighting {
+        font-size: 18px;
+    }
+    /* section-danger-mines */
+    .section-danger-mines {
+        padding: 70px 0 38px;
+    }
+    .section-danger-mines .section-title {
+        font-size: 40px;
+        margin: 0 auto 50px;
+    }
+    .section-danger-mines .text-wrap {
+        font-size: 20px;
+    }
+    .section-danger-mines .col-2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    .section-danger-mines img {
+        margin: 0;
+    }
+    .section-danger-mines .list-disc {
+        padding: 0 0 20px 0;
+    }
+    /* step-section */
+    .step-section {
+        padding: 73px 0 140px;
+    }
+    .step-section .section-title {
+        font-size: 40px;
+        margin: 0 0 105px;
+    }
+    .step-section .step-item-wrap {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+    }
+    .step-section .step-item + .step-item {
+        padding-top: 60px;
+        margin-top: 60px;
+    }
+    .step-section .step-item:nth-child(odd) .item-col:first-child {
+        order: 1;
+    }
+    .step-section .step-item:nth-child(odd) .item-col:last-child {
+        order: 2;
+    }
+    .hide-desk {
+        display: none;
+    }
+    .hide-mob {
+        display: block;
+    }
+    .step-section .step-item:first-child .item-title {
+        margin: 0 0 30px;
+    }
+    .step-section .item-title {
+        font-size: 32px;
+        margin: 0 0 30px;
+    }
+    .step-section .item-num {
+        margin: 0 0 20px;
+    }
+    .step-section .item-text {
+        font-size: 20px;
+    }
+    .step-section .img-note {
+        font-size: 14px;
+        margin: 10px auto 0;
+    }
+    .step-section .item-note {
+        font-size: 22px;
+    }
+    .step-section .list-arrow {
+        font-size: 20px;
+    }
+    /* section-promotion */
+    .section-promotion {
+        padding: 47px 0 77px;
+        font-size: 20px;
+    }
+    .section-promotion .section-title {
+        font-size: 40px;
+    }
+    .section-promotion .section-img {
+        margin: -60px auto 40px;
+    }
+    /* get-plan-section */
+    .get-plan-section {
+        padding: 70px 0;
+    }
+    .get-plan-section .section-title {
+        font-size: 40px;
+        margin: 0 auto 50px;
+    }
+    .get-plan-section .plan-wrap {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .get-plan-section .section-title .underline {
+        display: block;
+    }
+    /* free-bonus */
+    .free-bonus-subtitle {
+        font-size: 26px;
+    }
+    .free-bonus .free-bonus-list.two-col {
+        gap: 60px;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px auto 44px;
+    }
+    .free-bonus .free-bonus-list li {
+        font-size: 18px;
+        margin: 0 0 17px;
+    }
+    .text-holder.white-bg {
+        padding: 30px 60px;
+        font-size: 18px;
+    }
+    .free-bonus .free-bonus-item.bonus-yellow {
+        padding: 40px 20px 33px;
+    }
+    .free-bonus .bonus-yellow .free-bonus-title {
+        margin: 12px auto 39px;
+    }
+    .free-bonus-item table {
+        font-size: 18px;
+    }
+    /* quote-section */
+    .quote-section .money-back-wrap {
+        padding: 0 0 77px;
     }
     /* footer */
     .footer .subsidiary {
